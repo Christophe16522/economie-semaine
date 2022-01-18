@@ -23,11 +23,360 @@
       crossorigin="anonymous"
     ></script>
     <div class="container">
-      <h2>Date de transaction : <span id="current_date"></span></h2>
-      <h2>
-        Somme a transferer :
-        <span style="color: red" id="money_transfert"> </span>
-      </h2>
+     
+       
+      <style>
+        td {
+          text-align: center;
+          float: none;
+          margin: 0 auto;
+        }
+      </style>
+<br>
+<br>
+<br>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >Date</button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <h2>Date de transaction : <span id="current_date"></span></h2>
+              <h2>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+            Somme a transferer :
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <h2 style="color: red" id="money_transfert"> </h2>
+            </div>
+          </div>
+        </div>
+   
+      </div>
+<br>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>#</th>
+            <th>Somme semaine</th>
+            <th>Somme mois</th>
+            <th>Somme Annee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/01/2022</td>
+            <td>1</td>
+            <td>500.00 MUR</td>
+            <td rowspan="5">7,500.00 MUR</td>
+            <td rowspan="53">715,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>08/01/2022</td>
+            <td>2</td>
+            <td>1,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>15/01/2022</td>
+            <td>3</td>
+            <td>1,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>22/01/2022</td>
+            <td>4</td>
+            <td>2,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>29/01/2022</td>
+            <td>5</td>
+            <td>2,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>05/02/2022</td>
+            <td>6</td>
+            <td>3,000.00 MUR</td>
+            <td rowspan="4">15,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>12/02/2022</td>
+            <td>7</td>
+            <td>3,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>19/02/2022</td>
+            <td>8</td>
+            <td>4,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>26/02/2022</td>
+            <td>9</td>
+            <td>4,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>05/03/2022</td>
+            <td>10</td>
+            <td>5,000.00 MUR</td>
+            <td rowspan="4">23,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>12/03/2022</td>
+            <td>11</td>
+            <td>5,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>19/03/2022</td>
+            <td>12</td>
+            <td>6,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>26/03/2022</td>
+            <td>13</td>
+            <td>6,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>02/04/2022</td>
+            <td>14</td>
+            <td>7,000.00 MUR</td>
+            <td rowspan="5">40,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>09/04/2022</td>
+            <td>15</td>
+            <td>7,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>16/04/2022</td>
+            <td>16</td>
+            <td>8,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>23/04/2022</td>
+            <td>17</td>
+            <td>8,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>30/04/2022</td>
+            <td>18</td>
+            <td>9,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>07/05/2022</td>
+            <td>19</td>
+            <td>9,500.00 MUR</td>
+            <td rowspan="4">41,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>14/05/2022</td>
+            <td>20</td>
+            <td>10,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>21/05/2022</td>
+            <td>21</td>
+            <td>10,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>28/05/2022</td>
+            <td>22</td>
+            <td>11,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>04/06/2022</td>
+            <td>23</td>
+            <td>11,500.00 MUR</td>
+            <td rowspan="4">49,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>11/06/2022</td>
+            <td>24</td>
+            <td>12,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>18/06/2022</td>
+            <td>25</td>
+            <td>12,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>25/06/2022</td>
+            <td>26</td>
+            <td>13,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>02/07/2022</td>
+            <td>27</td>
+            <td>13,500.00 MUR</td>
+            <td rowspan="5">72,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>09/07/2022</td>
+            <td>28</td>
+            <td>14,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>16/07/2022</td>
+            <td>29</td>
+            <td>14,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>23/07/2022</td>
+            <td>30</td>
+            <td>15,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>30/07/2022</td>
+            <td>31</td>
+            <td>15,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>06/08/2022</td>
+            <td>32</td>
+            <td>16,000.00 MUR</td>
+            <td rowspan="4">67,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>13/08/2022</td>
+            <td>33</td>
+            <td>16,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>20/08/2022</td>
+            <td>34</td>
+            <td>17,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>27/08/2022</td>
+            <td>35</td>
+            <td>17,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>03/09/2022</td>
+            <td>36</td>
+            <td>18,000.00 MUR</td>
+            <td rowspan="4">75,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>10/09/2022</td>
+            <td>37</td>
+            <td>18,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>17/09/2022</td>
+            <td>38</td>
+            <td>19,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>24/09/2022</td>
+            <td>39</td>
+            <td>19,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>01/10/2022</td>
+            <td>40</td>
+            <td>20,000.00 MUR</td>
+            <td rowspan="5">105,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>08/10/2022</td>
+            <td>41</td>
+            <td>20,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>15/10/2022</td>
+            <td>42</td>
+            <td>21,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>22/10/2022</td>
+            <td>43</td>
+            <td>21,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>29/10/2022</td>
+            <td>44</td>
+            <td>22,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>05/11/2022</td>
+            <td>45</td>
+            <td>22,500.00 MUR</td>
+            <td rowspan="4">93,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>12/11/2022</td>
+            <td>46</td>
+            <td>23,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>19/11/2022</td>
+            <td>47</td>
+            <td>23,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>26/11/2022</td>
+            <td>48</td>
+            <td>24,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>03/12/2022</td>
+            <td>49</td>
+            <td>24,500.00 MUR</td>
+            <td rowspan="5">127,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>10/12/2022</td>
+            <td>50</td>
+            <td>25,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>17/12/2022</td>
+            <td>51</td>
+            <td>25,500.00 MUR</td>
+          </tr>
+          <tr>
+            <td>24/12/2022</td>
+            <td>52</td>
+            <td>26,000.00 MUR</td>
+          </tr>
+          <tr>
+            <td>31/12/2022</td>
+            <td>53</td>
+            <td>26,500.00 MUR</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
   <script>
@@ -35,13 +384,14 @@
       var jetton = 500;
       currentdate = new Date();
       var oneJan = new Date(currentdate.getFullYear(), 0, 1);
+      console.log(oneJan);
       var numberOfDays = Math.floor(
         (currentdate - oneJan) / (24 * 60 * 60 * 1000)
       );
       var result = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7);
       document.getElementById("current_date").innerHTML = currentdate;
       document.getElementById("money_transfert").innerHTML =
-        (result - 1) * jetton + " RS";
+        result * jetton + " RS";
     }
   </script>
 </html>
